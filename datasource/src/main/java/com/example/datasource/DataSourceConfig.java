@@ -1,10 +1,13 @@
 package com.example.datasource;
 
-//@MapperScan("com.example.datasource.generator.mapper")
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Configuration;
+
+@MapperScan("com.example.datasource.generator.mapper")
 //@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 // 表示通过aop框架暴露该代理对象,AopContext能够访问
 //@EnableAspectJAutoProxy(exposeProxy = true)
-//@Configuration
+@Configuration
 public class DataSourceConfig {
 
 

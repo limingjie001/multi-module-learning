@@ -4,19 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>datasource</module>
+        <module>Listener</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>SpringBoot-Advanced2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringBoot-Advanced2</name>
     <description>SpringBoot-Advanced2</description>
-
 
     <packaging>pom</packaging>
     <properties>
@@ -30,6 +30,7 @@
     <!--    可选继承的依赖-->
     <dependencyManagement>
         <dependencies>
+            <!--========================== dao模块所用依赖====================-->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -55,11 +56,14 @@
                 <scope>runtime</scope>
             </dependency>
         </dependencies>
+        <!--========================== 监听器模块所用依赖====================-->
+
+
     </dependencyManagement>
 
-    <!--    强制继承的依赖-->
     <dependencies>
-        <dependency>
+
+    <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>

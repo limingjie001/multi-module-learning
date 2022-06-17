@@ -3,6 +3,7 @@ package com.example.datasource.generator.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.datasource.generator.domain.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * @author li290
@@ -11,6 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @Entity generator.domain.User
  */
 @Mapper
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }
